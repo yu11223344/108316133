@@ -54,7 +54,7 @@ var FindingObservation={
         "code": {
         "coding": [ {
         "system":
-       "https://203.64.84.150:58443/r5/fhir/CodeSystem/8f414151-bf5f-46ce-94fe-f96d9e867d29",
+       "https://drive.google.com/file/d/1jrCYcHPLbbxiyeLktLGzBuzIw_M5rUco/view?usp=share_link",
         "code": "image.finding.keyimage"
         } ]
         },
