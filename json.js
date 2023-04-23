@@ -54,7 +54,7 @@ var FindingObservation={
         "code": {
         "coding": [ {
         "system":
-       "https://drive.google.com/file/d/1jrCYcHPLbbxiyeLktLGzBuzIw_M5rUco/view?usp=share_link",
+       "https://drive.google.com/file/d/1jrCYcHPLbbxiyeLktLGzBuzIw_M5rUco/view?usp=share_link",//把影像發現記錄Gdrive存的圖片
         "code": "image.finding.keyimage"
         } ]
         },
