@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta content="CT Calcium Score" name="dcterms.title"/>
+<meta content="CT Calcium Score template :: Authored by Jacobs JE, et al." name="dcterms.description"/>
+<meta content="http://www.radreport.org/template/0000007" name="dcterms.identifier"/>
+<meta content="en" name="dcterms.language"/>
+<meta content="IMAGE_REPORT_TEMPLATE" name="dcterms.type"/>
+<meta content="Radiological Society of North America (RSNA)" name="dcterms.publisher"/>
+<meta content="May be used gratis, subject to license agreement" name="dcterms.rights"/>
+<meta content="http://www.radreport.org/license.pdf" name="dcterms.license"/>
+<meta content="2012-07-17" name="dcterms.date"/>
+<meta content="Jacobs JE, et al." name="dcterms.creator"/>
+<meta content="Kahn CE Jr [editor]" name="dcterms.contributor"/>
+<meta content="North American Society for Cardiac Imaging (NASCI)" name="dcterms.contributor"/>
+<link rel="stylesheet" type="text/css" href="IHE_Template_Style.css"/>
+<!-- The absolute link to the CSS file is http://www.radreport.org/html/IHE_Template_Style.css -->
+<script type="text/javascripts" src="json.js"></script>
+<title>CT Calcium Score</title>
+</head>
+  <body>
+    <section data-section-name="Findings">
+      <header class="level1">Findings</header>
+      <section data-section-name="Technical quality">
+        <header class="level2">Technical quality</header>
+        <p>
+        <label for="T7_35">Examination quality:</label>
+        <select id="T7_35" name="Examination quality">
+          <option id="T7_36" name="Excellent" value="Excellent">Excellent</option>
+          <option id="T7_37" name="Good" value="Good">Good</option>
+          <option id="T7_38" name="Fair" value="Fair">Fair</option>
+          <option id="T7_39" name="Poor" value="Poor">Poor</option>
+          <option id="T7_40" name="Nondiagnostic" value="Nondiagnostic">Nondiagnostic</option>
+        </select>
+        </p>
+        <p>
+        <label for="T7_41">Limitation:</label>
+        <select id="T7_41" name="Limitation" multiple="multiple">
+          <option id="T7_none" name="None" value="None" selected>None</option>
+          <option id="T7_42" name="Misregistration artifacts" value="Misregistration artifacts">Misregistration artifacts</option>
+          <option id="T7_43" name="Patient motion" value="Patient motion">Patient motion</option>
+          <option id="T7_44" name="Calcium blooming artifacts" value="Calcium blooming artifacts">Calcium blooming artifacts</option>
+          <option id="T7_45" name="Metal artifact" value="Metal artifact">Metal artifact</option>
+          <option id="T7_46" name="Arrhythmia" value="Arrhythmia">Arrhythmia</option>
+        </select>
+        </p>
+      </section>
+      <section data-section-name="Overall scores">
+        <header class="level2">Overall scores</header>
+        <p>
+        <label for="T7_47">Agatston score:</label>
+        <input type="number" id="T7_47" name="Agatston score" value=""/>
+        </p>
+        <p>
+        <label for="T7_49">Total calcium score:</label>
+        <input type="number" id="T7_49" name="Total calcium score" data-field-units="" min="" max=""/> 
+        </p>
+        <p>
+        <label for="T7_50">Total volume score:</label>
+        <input type="number" id="T7_50" name="Total volume score" data-field-units="mm3" min="" max=""/> <label for="T7_50">mm3</label>
+        </p>
+        <p>
+        <label for="T7_51">Percentile:</label>
+        <input type="number" id="T7_51" name="Percentile" data-field-units="%" min="0" max="100"/> <label for="T7_51">%</label>
+        </p>
+      </section>
+      <section data-section-name="Artery scores">
+        <header class="level2">Artery scores</header>
+        <p>
+        <label for="T7_53">Left main coronary artery:</label>
+        <input type="number" id="T7_53" name="Left main coronary artery" data-field-units="" min="" max=""/> 
+        </p>
+        <p>
+        <label for="T7_54">Left anterior descending artery:</label>
+        <input type="number" id="T7_54" name="Left anterior descending artery" data-field-units="" min="" max=""/> 
+        </p>
+        <p>
+        <label for="T7_55">Left circumflex artery:</label>
+        <input type="number" id="T7_55" name="Left circumflex artery" data-field-units="" min="" max=""/> 
+        </p>
+        <p>
+        <label for="T7_56">Right coronary artery:</label>
+        <input type="number" id="T7_56" name="Right coronary artery" data-field-units="" min="" max=""/> 
+        </p>
+      </section>
+      <section data-section-name="Other findings">
+        <header class="level2">Other findings</header>
+        <p>
+        <label for="T7_57">Cardiac chambers:</label>
+        <input type="text" id="T7_57" name="Cardiac chambers" value="Normal. "/>
+        </p>
+        <p>
+        <label for="T7_59">Cardiac valves:</label>
+        <input type="text" id="T7_59" name="Cardiac valves" value="Normal. "/>
+        </p>
+        <p>
+        <label for="T7_61">Thoracic aorta:</label>
+        <input type="text" id="T7_61" name="Thoracic aorta" value="Normal. "/>
+        </p>
+        <p>
+        <label for="T7_63">Lungs:</label>
+        <input type="text" id="T7_63" name="Lungs" value="Normal. "/>
+        </p>
+        <p>
+        <label for="T7_65">Upper abdomen:</label>
+        <input type="text" id="T7_65" name="Upper abdomen" value="Normal. "/>
+        </p>
+      </section>
+    </section>
+    <button onclick="Submit()">Submit</button>
+  </body>
+</html>
